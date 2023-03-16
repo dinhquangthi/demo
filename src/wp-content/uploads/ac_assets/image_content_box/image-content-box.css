@@ -1,0 +1,94 @@
+.uc_image-content-box * {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+}
+
+.uc_image-content-box {
+    display:block;
+    width:100%;
+    text-align:center;
+    overflow:hidden;
+
+}
+.uc_image-content-box .uc_portfolio_gallery ul li {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}  
+
+.uc_image-content-box .uc_portfolio_content {
+    overflow: hidden;
+    position: relative;
+}
+.uc_image-content-box .uc_portfolio_content img{
+	 display: inline-block;
+    height: auto;
+    vertical-align:top;
+    width: 100%;
+}
+.uc_image-content-box .uc_portfolio_overlay, .uc_image-content-box .uc_portfolio_overlay a, 
+.uc_image-content-box .uc_portfolio_overlay a .uc_porfolio_detail, .uc_image-content-box .uc_portfolio_overlay a h2, 
+.uc_image-content-box .uc_portfolio_overlay a p,.uc_image-content-box .uc_portfolio_overlay a .uc_portfolio_link{
+    opacity: 0;
+    transform: scale(0.5);
+}
+.uc_image-content-box .uc_portfolio_overlay {
+    background-color: rgba(217, 35, 45, 0.85);
+    bottom: 0;
+    color: #fff;
+    height: 100%;
+    left: 0;
+    padding:30px;
+    position: absolute;
+    transition: all 0.3s ease-out 0s;
+    width: 100%;
+	text-align:left;
+	
+}
+
+.uc_image-content-box .uc_portfolio_overlay a {
+	text-decoration:none;
+}
+
+.uc_image-content-box .uc_portfolio_overlay a .uc_porfolio_detail {
+    font-size: 60px;
+	color:#fff;
+	transition: all 0.3s ease-out 0.25s;
+}
+.uc_image-content-box .uc_portfolio_overlay a h2{
+    position: relative;
+    transition: all 0.3s ease-out 0.15s;
+	font-size:24px;
+	color:#fff;
+	 margin: 2px 0 6px;
+	 font-weight:500;
+}
+.uc_image-content-box .uc_portfolio_overlay a p {
+    position: relative;
+    transition: all 0.3s ease-out 0.25s;
+	font-size:17px;
+	color:#fff;
+	line-height:25px;
+	margin-bottom:5px;
+}
+.uc_image-content-box .uc_portfolio_overlay a .uc_portfolio_link {
+    bottom: 22px;
+    font-size: 24px;
+    transition: all 0.3s ease-out 0.35s;
+	color:#fff;
+	display:block;
+}
+.uc_image-content-box .uc_portfolio_content:hover .uc_portfolio_overlay, 
+.uc_image-content-box .uc_portfolio_content:hover .uc_portfolio_overlay a,   
+.uc_image-content-box .uc_portfolio_content:hover .uc_portfolio_overlay a .uc_porfolio_detail, 
+.uc_image-content-box .uc_portfolio_content:hover .uc_portfolio_overlay a h2, 
+.uc_image-content-box .uc_portfolio_content:hover .uc_portfolio_overlay a p, 
+.uc_image-content-box .uc_portfolio_content:hover .uc_portfolio_overlay a .uc_portfolio_link{
+	opacity:1;
+	transform:scale(1);
+}
+

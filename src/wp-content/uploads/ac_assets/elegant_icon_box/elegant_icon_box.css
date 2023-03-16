@@ -1,0 +1,91 @@
+
+.uc_elegant_icon_box * {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.uc_elegant_icon_box{
+	width: 100%;
+	float: left;
+}
+.uc_elegant_icon_box .uc_tg_search_category{
+	z-index: 1;
+	width: 100%;
+	height: 280px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+}
+.uc_elegant_icon_box .uc_tg_search_category:hover{
+	cursor: pointer;
+}
+.uc_elegant_icon_box .uc_tg_search_category:hover:after,
+.uc_elegant_icon_box .uc_tg_search_category:hover:before{
+	width: 100%;
+	height: 100%;
+	visibility: visible;
+}
+.uc_elegant_icon_box .uc_tg_search_category:after,
+.uc_elegant_icon_box .uc_tg_search_category:before{
+	content: '';
+	z-index: 2;
+	width: 0;
+	height: 0;
+	visibility: hidden;
+	position: absolute;
+	-webkit-transition: all 800ms ease-in-out;
+	-moz-transition: all 800ms ease-in-out;
+	-ms-transition: all 800ms ease-in-out;
+	-o-transition: all 800ms ease-in-out;
+	transition: all 800ms ease-in-out;
+}
+
+.uc_elegant_icon_box .uc_tg_search_category .uc_tg_displaytable {
+	border: 5px solid #ddd;
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+.uc_elegant_icon_box .uc_tg_search_category .uc_tg_displaytable .uc_tg_displaytablecell{
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle
+}
+
+.uc_elegant_icon_box .uc_tg_search_category .uc_tg_displaytable .uc_tg_displaytablecell .uc_tg_box{
+	z-index: 3;
+	padding: 0 60px;
+	overflow: hidden;
+}
+.uc_elegant_icon_box .uc_tg_search_category .uc_tg_displaytable .uc_tg_displaytablecell .uc_tg_box h3{
+	font-weight: 400;
+	font-style: normal;
+	text-transform:uppercase;
+	font-size: 20px;
+	color: #5d5955;
+	margin: 0 0 25px;
+	padding: 0 0 18px;
+	line-height: 20px;
+}
+.uc_elegant_icon_box .uc_tg_search_category .uc_tg_displaytable .uc_tg_displaytablecell .uc_tg_box i.fa{
+	display: block;
+	font-size: 80px;
+	line-height: 80px;
+}
+
+.uc_elegant_icon_box .uc_tg_search_category .uc_tg_displaytable .uc_tg_displaytablecell .uc_tg_box .icon-stethoscope:before {
+    content: "\e91a";
+}
+
+.uc_elegant_icon_box .uc_tg_search_category:hover .uc_tg_displaytable .uc_tg_displaytablecell .uc_tg_box .uc_tg_show {
+	right: 0;
+	bottom: 0;
+	opacity: 1;
+	visibility: visible;
+}
+
