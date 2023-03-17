@@ -39,6 +39,7 @@ services:
     domainname: ${PROJECT_NAME}.test
 
   phpmyadmin:
+    platform: linux/amd64
     image: phpmyadmin/phpmyadmin
     container_name: ${PROJECT_NAME}-phpmyadmin
     environment:
