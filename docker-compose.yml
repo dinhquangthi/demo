@@ -26,7 +26,7 @@ services:
     container_name: ${PROJECT_NAME}-web
     volumes:
       - ./src:/var/www/html
-      - ./config/php.ini:/usr/local/etc/php/conf.d/php.ini
+      - ./config/phpmyadmin-misc.ini:/usr/local/etc/php/conf.d/php.ini
     depends_on:
       - db
     ports:
@@ -54,6 +54,7 @@ services:
       - 8828:80
     volumes:
       - /sessions
+      - ./config/phpmyadmin-misc.ini:/usr/local/etc/php/conf.d/phpmyadmin-misc.ini
     depends_on:
       - db
 
